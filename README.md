@@ -1,6 +1,6 @@
 ## Core Buster Movie Rental Application
 
-###BACKGROUND
+### BACKGROUND
 
 This repository is a modern take on an exercise from Martin Fowler's book, "Refactoring." I was already knowledgeable
 of this exercise and decided to write this application as a modern take on the exercise while doing a coding test for a 
@@ -14,7 +14,7 @@ I wrote this application using the following technologies:
 - **`Vue.js version 2.5.17`** 
 - **`Bootstrap version 4.0.0`**
 
-###CODE SETUP
+### CODE SETUP
 
 This application uses Lando to set up a local development environment. While I do have experience writing custom
 Docker compose files, as well, I have found Lando extremely helpful and reliable for getting a local dev environment up 
@@ -44,20 +44,18 @@ If the website loads correctly, use the following to log into the application:
 If the website did not load correctly in a browser, please check the settings in the `~/.env` file and also in the 
 `~/config/database.php` file to ensure all settings are correct.
 
-###DATABASE SETUP
+### DATABASE SETUP
 
 The database connection info is found in the `~/.env` file and in the `~/config/database.php` files.
 
 Create a new database connection from the settings in those configuration files and create a new database for 
 `core_buster` in your MySQL IDE of choice. 
 
-I have included a standalone SQL file OR you can run the Laravel/Eloquent migrations.
+I have included a standalone SQL file you can import into your IDE of choice, `core_buster.sql`, or you can run the Laravel/Eloquent migrations:
 
 `lando artisan migrate`
 
-Or you can import the included `core_buster.sql` file.
-
-###DEPENDENCIES
+### DEPENDENCIES
 
 Run the following to install dependencies:
 
@@ -73,7 +71,7 @@ If you are curious as to what dependency packages I chose to use for this applic
 After performing the above tasks, you should have a working Core Buster application and be able to login and see the 
 data being returned from the database. 
 
-###EXAMINING CODE
+### EXAMINING CODE
 
 The main files for examining logic in this application include:
 
