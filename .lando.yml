@@ -1,0 +1,7 @@
+name: core-buster
+recipe: laravel
+config:
+  webroot: public
+services:
+  database:
+    portforward: 3310
